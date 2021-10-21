@@ -1,4 +1,4 @@
-# Login Form <img height="30px" src="./mobile/assets/img/google.png">
+# Login Form <img height="30px" src="../mobile/assets/img/google.png">
 
 This is an application of a login site, where I was inspired by the google registration site, and I even used a mention of the website of the own...
 
@@ -9,8 +9,8 @@ Thanks, made by Joao!
 
 ## Technologies 
 
-- HTML5 <img height="15px" src="./mobile/assets/img/icon/html5.png">
-- CSS3  <img height="15px" src="./mobile/assets/img/icon/css.png">
+- HTML5 <img height="15px" src="../mobile/assets/img/icon/html5.png">
+- CSS3  <img height="15px" src="../mobile/assets/img/icon/css.png">
  # 
-<img style="margin: 0 auto;" src="./desktop/assets/img/printscream.jpeg">
+<img style="margin: 0 auto;" src="./assets/img/printscream.jpeg">
 
