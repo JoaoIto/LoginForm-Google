@@ -1,0 +1,56 @@
+button{
+    height: 50px;
+    width: 450px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: transparent;
+    transition: 0.3s all;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(.97);
+}
+
+#enter{
+    background-color: #04C45C;
+    text-align: center;
+    align-items: center;
+}
+
+#enter:hover{
+    background-color: #08f074;
+}
+
+#enter:active{
+    background-color: #058642;
+}
+
+#google{
+    background-color: #1A202C;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+#google:hover{
+    background-color: #293246;
+}
+
+#google:active{
+    background-color: #000000;
+}
+
+img {
+    margin-left: 8px;
+}
