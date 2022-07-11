@@ -22,6 +22,59 @@ button:active {
     transform: scale(.97);
 }
 
+.switch{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:60px;
+    height:50px;
+}
+
+input[name = "dark"]{
+    width:60px;
+    height:20px;
+    position: relative;
+    outline: none;
+    -webkit-appearance: none;
+    background-color: #c6c6c6;
+    border: 1px solid #000000.2;
+    border-radius: 20px;
+    box-shadow: 0 5px #000000.2 inset;
+}
+
+input:checked[name = "dark"]{
+    background-color: #28a3a3;
+}
+
+input[name = "dark"]::before{
+    content: '';
+    width: 20px;
+    height:20px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #000000.2 inset;
+    transform: scale(1.2);
+    transition: .25s;
+    cursor: pointer;
+}
+
+input:checked[name = "dark"]::before{
+    position: absolute;
+    left:30px
+}
+
+.turnOnContainer{
+    background-color: #037e59;
+    box-shadow: -5px 5px 5px 5px#68ce97;
+    color: #fff;
+}
+
+.turnOnBody{
+    background-color: #000000;
+}
 #enter{
     background-color: #04C45C;
     text-align: center;

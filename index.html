@@ -29,16 +29,32 @@
     <main>
         <div class="container">
             <div class="titles">
-                <h2 id="welcome">Bem vindo de volta!</h2>
+                <div class="bem-vindo">
+                    <h2 id="welcome">Bem vindo de volta!</h2>
+                    <div class="switch">
+                        <label for="dark"></label>
+                        <input id="dark" type="checkbox" name="dark" />
+                    </div>
+                </div>
                 <h1 id="title">Faça login na sua conta</h1>
             </div>
-            <div class="inputs">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+            <form>
+                <div class="inputs">
+                    <small class="textError" id="textForm"></small>
+                    <label for="email">E-mail</label>
+                    <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email"
+                        required="">
+                    <small class="textError" id="textEmail"></small>
 
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password">
-            </div>
+                    <label for="password">Senha</label>
+                    <input name="senha" id="password" class="input" type="password" placeholder="Senha"
+                        data-tipo="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&amp;*_=+-]).{6,12}$"
+                        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+                        required="">
+                    <small class="textError" id="textPassword"></small>
+
+                </div>
+            </form>
             <div class="sub_inputs">
                 <h4>Lembre de mim</h4>
                 <h4><a href="#">Esqueceu sua senha?</a></h4>
@@ -54,6 +70,8 @@
             </div>
         </div>
     </main>
+    <script src="./assets/js/val.js"></script>
+    <script src="./assets/js/buttonDark.js"></script>
 </body>
 
 </html>

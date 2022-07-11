@@ -32,3 +32,7 @@ input::placeholder {
     justify-content: space-around;
     margin-top: 15px;
 }
+
+.textError{
+    color: rgb(197, 169, 7);
+}
