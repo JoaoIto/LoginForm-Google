@@ -43,7 +43,7 @@ input[name = "dark"]{
 }
 
 input:checked[name = "dark"]{
-    background-color: #28a3a3;
+    background-color: #00BFFF;
 }
 
 input[name = "dark"]::before{
@@ -67,7 +67,7 @@ input:checked[name = "dark"]::before{
 }
 
 .turnOnContainer{
-    background-color: #037e59;
+    background-color: #00BFFF;
     box-shadow: -5px 5px 5px 5px#68ce97;
     color: #fff;
 }
@@ -75,6 +75,7 @@ input:checked[name = "dark"]::before{
 .turnOnBody{
     background-color: #000000;
 }
+
 #enter{
     background-color: #04C45C;
     text-align: center;
