@@ -23,24 +23,27 @@
         <form id="subscribe" action="">
             <fieldset>
                 <div class="top">
-                    <h1 class="title" id="title">Crie a sua conta<img height="40"
-                            src="./assets/icons/google.png" alt=""></h1>
-            <div class="switch">
-                <label for="dark"></label>
-                <input id="dark" type="checkbox" name="dark" />
-            </div>
+                    <h1 class="title" id="title">Crie a sua conta<img height="40" src="./assets/icons/google.png"
+                            alt=""></h1>
+                    <div class="switch">
+                        <label for="dark"></label>
+                        <input id="dark" type="checkbox" name="dark" />
+                    </div>
                 </div>
                 <label for="name">Insira seu nome completo</label>
-                <input class="text" id="name" type="email" placeholder="Digite aqui seu nome completo">
+                <input class="text" id="name" type="text" placeholder="Digite aqui seu nome completo" data-tipo="nome" required>
+                <span class="input-mensagem-erro invisible">Este campo não está válido</span>
 
                 <label for="email">Insira seu email</label>
-                <input class="text" id="email" type="email" placeholder="Digite aqui seu email:">
+                <input class="text" id="email" type="email" placeholder="Digite aqui seu email:" data-tipo="email" required>
+                <span class="input-mensagem-erro invisible">Este campo não está válido</span>
 
                 <label for="password">Insira sua senha</label>
-                <input class="text" id="password" type="password" placeholder="Digite aqui sua senha:">
+                <input class="text" id="password" type="password" placeholder="Digite aqui sua senha:" data-tipo="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+                <span class="input-mensagem-erro invisible">Este campo não está válido</span>
 
                 <label for="password">Confirme sua senha</label>
-                <input class="text" id="password" type="password" placeholder="Confirme sua senha:">
+                <input class="text" id="password" type="password" placeholder="Confirme sua senha:" data-tipo="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
 
                 <input id="enter" type="submit" value="Inscrever-se">
             </fieldset>

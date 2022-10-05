@@ -13,6 +13,10 @@ body{
     justify-content: space-around;
 }
 
+.input-mensagem-erro{
+    color: red;
+}
+
 fieldset{
     display: flex;
     flex-direction: column;
@@ -43,6 +47,10 @@ input{
 
 #enter:active{
     transform: scale(.98);
+}
+
+.invisible{
+    display: none;
 }
 
 @media screen and (min-width: 1080px){
