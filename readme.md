@@ -12,4 +12,4 @@ Thanks, made by Joao!
 <img style="margin: 0 auto;" src="./assets/print/printDesk.png">
 
 ## Mobile
-<img style="margin: 0 auto;" src="./assets/print/printMobile.png">
+<img style="margin: 0 auto;" src="./assets/print/printMobile.png#vitrinedev">
