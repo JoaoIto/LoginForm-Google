@@ -4,5 +4,7 @@ inputDark.addEventListener("change", function turnOn(event){
     const $body = document.querySelector("body");
     $body.classList.toggle("turnOn");
     const $input = document.querySelectorAll(".text");
-    $input.forEach()
+    $input.forEach(element => {
+        element.classList.toggle("turnOnInput")
+    })
 });

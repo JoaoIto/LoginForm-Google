@@ -48,5 +48,9 @@ input:checked[name = "dark"]::before{
 }
 
 .turnOnInput{
-    background-color: grey;
+    background-color: rgb(78, 78, 78);
+}
+
+.turnOnInput::placeholder{
+    color: #fff;
 }
