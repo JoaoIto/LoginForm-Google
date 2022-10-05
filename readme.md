@@ -1,6 +1,6 @@
 # Login Form <img height="30px" src="./assets/icons/google.png">
 
-This is an application of a login site, where I was inspired by the google registration site, and I even used a mention of the website of the own...
+**This is an application of a login site, where I was inspired by the google registration site, and I even used a mention of the website of the own...**
 
 This is the second version of this login site, entirely developed by me, with CSS (in main, using flexbox), HTML, probably when I can develop a little more about JS API's, requests, I'll implement it here! In the meantime, I hope you enjoy my application ;)!
 
@@ -12,4 +12,4 @@ Thanks, made by Joao!
 <img style="margin: 0 auto;" src="./assets/print/printDesk.png">
 
 ## Mobile
-<img style="margin: 0 auto;" src="./assets/print/printMobile.png">
+<img style="margin: 0 auto;" src="./assets/print/printMobile.png#vitrinedev">
