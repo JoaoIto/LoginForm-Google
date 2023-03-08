@@ -1,20 +1,26 @@
-import { Path, UseFormRegister } from "react-hook-form";
+import React from 'react';
+import { useForm, FormProvider, Controller, useFormContext  } from 'react-hook-form';
 
-interface IFormValues {
-  "First Name": string;
-  Age: number;
+interface Props {
+  label: string;
+  type: string;
+  name: string;
+  placeholder: string;
+  required?: boolean;
 }
 
-type InputProps = {
-  label: Path<IFormValues>;
-  register: UseFormRegister<IFormValues>;
-  required: boolean;
-};
+export const Input: React.FC<Props> = ({ label, type, name, placeholder, required }) => {
+  const methods = useFormContext();
 
-// The following component is an example of your existing Input Component
-const Input = ({ label, register, required }: InputProps) => (
-  <>
-    <label>{label}</label>
-    <input {...register(label, { required })} />
-  </>
-);
+  return (
+    <div>
+      <label>{label}</label>
+      <Controller
+        name={name}
+        control={methods.control}
+        defaultValue=""
+        render={({ field }) => <input {...field} type={type} placeholder={placeholder} required={required}/>}
+      />
+    </div>
+  );
+};

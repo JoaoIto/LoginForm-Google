@@ -1,21 +1,31 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import React, { useState } from "react";
+import { useForm, FormProvider, Controller } from "react-hook-form";
+import { Input } from "../components/Input";
 
-interface SignUp {
+interface FormValues {
   firstName: string;
   lastName: string;
-  age: number;
+  email: string;
 }
 
-export function SignUp() {
-  const { register, handleSubmit } = useForm<SignUp>();
-  const onSubmit: SubmitHandler<SignUp> = data => console.log(data);
-   
+export const SignupForm: React.FC = () => {
+  const methods = useForm();
+
+  const onSubmit = (data: any) => {
+    console.log(data);
+  };
+
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("firstName", { required: true, maxLength: 20 })} />
-      <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
-      <input type="number" {...register("age", { min: 18, max: 99 })} />
-      <input type="submit" />
-    </form>
+    <FormProvider {...methods}>
+      <form onSubmit={methods.handleSubmit(onSubmit)}>
+
+        <Input label="Nome: " type="text" name="user.nome" placeholder="Insira seu nome completo: " required />
+        <Input label="Email" type="email" name="user.email" placeholder="Insira seu melhor email: " required />
+        <Input label="Idade" type="number" name="user.idade" placeholder="Insira sua idade (mínimo 18)" required />
+        
+        <button type="submit">Submit</button>
+      </form>
+    </FormProvider>
   );
-}
+};
+
