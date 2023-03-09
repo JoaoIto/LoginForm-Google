@@ -22,8 +22,9 @@ export const SignupForm: React.FC = () => {
         <Input label="Nome: " type="text" name="user.nome" placeholder="Insira seu nome completo: " required />
         <Input label="Email" type="email" name="user.email" placeholder="Insira seu melhor email: " required />
         <Input label="Idade" type="number" name="user.idade" placeholder="Insira sua idade (mínimo 18)" required />
-        
-        <button type="submit">Submit</button>
+        <Input label="Crie uma senha" type="password" name="user.senha" placeholder="********" required />
+
+        <button type="submit">Cadastrar-se</button>
       </form>
     </FormProvider>
   );
