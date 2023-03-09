@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { SignupForm } from './pages/SignUp'
+import { Home } from './pages/Home'
 import './assets/styles/App.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <SignupForm />
+    <Home />
   </React.StrictMode>,
 )
