@@ -1,4 +1,4 @@
-# [Login Google <img height="30px" src="./public/google.png">](https://google-form-m5cfa9cyt-joaoito.vercel.app/)
+# [Login Google <img height="30px" src="https://github.com/JoaoIto/LoginForm-Google/blob/develop/public/google.png?raw=true">](https://google-form-m5cfa9cyt-joaoito.vercel.app/)
 
 Esta é uma nova aplicação de React em TypeScript para a construção de um formulário cadastro e de uma interface login da página!
 
