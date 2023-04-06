@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Login Google <img height="30px" src="https://github.com/JoaoIto/LoginForm-Google/blob/develop/public/google.png?raw=true">](https://google-form-m5cfa9cyt-joaoito.vercel.app/)
+
+Esta é uma nova aplicação de React em TypeScript para a construção de um formulário cadastro e de uma interface login da página!
+
+**[Em produção...] Esta é a terceira versão deste website que está em desenvolvimento, e agora indo para a sua melhor versão com alta tecnologia, das mais novas do mercado, e inovando ainda mais a interface web para o usuário!**
+
+---
+
+## Techs
+
+- [TailwindCSS](https://tailwindcss.com/): A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+
+- [React-Hook-Form](https://react-hook-form.com/): Biblioteca do próprio React para construção de formulários, desde layout, validação e guarda de dados;
+
+---
+
+### This is a [Next.js](https://nextjs.org/) project  with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
 ## Getting Started
 
